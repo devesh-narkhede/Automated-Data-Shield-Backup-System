@@ -5,6 +5,18 @@ It performs incremental backup of files and creates zip archive for storage and 
 
 ---
 
+## Technology Used
+
+- Python
+- OS Module
+- Shutil Module
+- Hashlib (MD5 hashing)
+- Zipfile Module
+- Schedule Library
+- SMTP (Email Sending)
+
+---
+
 ## Features
 
 - Incremental Backup (only new and modified files are copied)
@@ -31,27 +43,25 @@ It performs incremental backup of files and creates zip archive for storage and 
 ## Project Structure
 
 Project/
-│
-├── main.py
-├── backup.py
-├── utils.py
-├── logger.py
-├── restore.py
-├── email_sender.py
-│
-├── Backups/
-├── Logs/
-└── history.txt
+- main.py  
+- backup.py  
+- utils.py  
+- logger.py  
+- restore.py  
+- email_sender.py  
+
+Note:  
+The following are created automatically when the program runs:
+- Backups/  
+- Logs/  
+- history.txt  
 
 ---
 
 ## How to Run
 
 1. Open terminal in project folder  
-2. Run the program:
-
-   python main.py
-
+2. Run the program: python main.py  
 3. Select option from menu  
 
 ---
