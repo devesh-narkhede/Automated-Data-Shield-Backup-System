@@ -1,45 +1,45 @@
 # Automated Data Shield Backup System
 
 This project is an automated backup system developed using Python.  
-It performs incremental backup of files and creates zip archive for storage and restore.
+It performs incremental backup of files and creates zip archives for storage and restoration.
 
 ---
 
 ## Technology Used
 
 Language:
-- Python
+- Python  
 
 Libraries and Modules:
-- os (file and directory handling)
-- shutil (file operations)
-- hashlib (MD5 hashing for file comparison)
-- zipfile (creating zip archives)
-- schedule (task scheduling)
-- smtplib and email (sending email with attachment)
+- os (file and directory handling)  
+- shutil (file operations)  
+- hashlib (MD5 hashing for file comparison)  
+- zipfile (creating zip archives)  
+- schedule (task scheduling)  
+- smtplib and email (sending email with attachment)  
 
 ---
 
 ## Features
 
-- Incremental Backup (only new and modified files are copied)
-- Automatic Backup using Scheduler
-- Zip file creation with timestamp
-- Restore backup from zip file
-- Logging system (single log file)
-- Backup history tracking
-- Email notification with log attachment
-- Menu driven user interface
+- Incremental backup (only new and modified files are copied)  
+- Automatic backup using scheduler  
+- ZIP file creation with timestamp  
+- Restore backup from ZIP file  
+- Logging system (single log file)  
+- Backup history tracking  
+- Email notification with log attachment  
+- Menu-driven user interface  
 
 ---
 
 ## How it Works
 
-- The system checks files using hashing technique
-- Only new or modified files are copied to backup folder
-- Backup folder is compressed into zip file
-- Log file and history are updated
-- Email is sent after backup completion
+- The system uses hashing technique to compare files  
+- Only new or modified files are copied to the backup folder  
+- The backup folder is compressed into a ZIP file  
+- Log file and history are updated after each backup  
+- Email notification is sent after backup completion  
 
 ---
 
@@ -54,7 +54,7 @@ Project/
 - email_sender.py  
 
 Note:  
-The following are created automatically when the program runs:
+The following are created automatically when the program runs:  
 - Backups/  
 - Logs/  
 - history.txt  
@@ -77,11 +77,11 @@ The following are created automatically when the program runs:
    -> Backup runs automatically  
 
 2. Restore Backup  
-   -> Enter zip file name  
+   -> Enter ZIP file name  
    -> Enter destination folder  
 
 3. View History  
-   -> Shows previous backup details  
+   -> Displays previous backup details  
 
 ---
 
@@ -89,7 +89,8 @@ The following are created automatically when the program runs:
 
 - Source folder must exist before backup  
 - Backup runs continuously until stopped (Ctrl + C)  
-- Email requires valid Gmail app password  
+- Update email credentials in `email_sender.py` before running  
+- It is recommended to use app password for Gmail  
 
 ---
 
