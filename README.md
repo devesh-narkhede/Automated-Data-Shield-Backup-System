@@ -7,13 +7,16 @@ It performs incremental backup of files and creates zip archive for storage and 
 
 ## Technology Used
 
+Language:
 - Python
-- OS Module
-- Shutil Module
-- Hashlib (MD5 hashing)
-- Zipfile Module
-- Schedule Library
-- SMTP (Email Sending)
+
+Libraries and Modules:
+- os (file and directory handling)
+- shutil (file operations)
+- hashlib (MD5 hashing for file comparison)
+- zipfile (creating zip archives)
+- schedule (task scheduling)
+- smtplib and email (sending email with attachment)
 
 ---
 
