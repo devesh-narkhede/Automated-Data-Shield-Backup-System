@@ -19,9 +19,9 @@ import os
 def SendMailWithAttachment(zip_file, log_file):
 
     try:
-        sender_email = "deveshnarkhede99@gmail.com"
-        app_password = "tpvl clxc wxcj xzkl"
-        receiver_email = "deveshnarkhede21@gmail.com"
+        sender_email = "your_email@gmail.com"
+        app_password = "your_app_password"
+        receiver_email = "receiver_email@gmail.com"
 
         subject = "Backup Completed Successfully"
 
